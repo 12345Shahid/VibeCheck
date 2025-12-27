@@ -1,0 +1,85 @@
+:root {
+  --bg: #ff00ff;   /* magenta vibe */
+  --card: #00ffff; /* cyan card */
+  --text: #000000;
+  --happy: #efff00;
+  --productive: #ff8000;
+  --chaotic: #8000ff;
+}
+
+body {
+    background: var(--bg);
+  color: var(--text);
+    font-family: 'Comic Sans MS', cursive; /* weird font */
+  margin: 10px;
+    padding: 50px;
+}
+
+.vibe-container {
+    max-width: 800px;
+  transform: rotate(-1deg); /* shift it slightly */
+}
+
+header {
+  text-align: left;
+  margin-bottom: 50px;
+  background: white;
+}
+
+.vibe-form {
+  display: block;
+  margin-bottom: 5rem;
+}
+
+textarea {
+  background: yellow;
+  border: 5px dashed red;
+  color: blue;
+  width: 100%;
+  border-radius: 50px;
+}
+
+button {
+  background: green;
+  color: pink;
+  padding: 2rem;
+  font-size: 20px;
+  cursor: crosshair;
+}
+
+.vibe-filters {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+}
+
+.vibe-filters button {
+  background: #fff;
+  color: #000;
+}
+
+.vibe-filters button.active {
+  background: #000;
+  color: #fff;
+}
+
+.vibe-card {
+  background: var(--card);
+  padding: 5px;
+  border-radius: 0;
+  margin-bottom: 30px;
+  border: 10px solid black;
+}
+
+.vibe-card.Happy { background: var(--happy); }
+.vibe-card.Productive { background: var(--productive); }
+.vibe-card.Chaotic { background: var(--chaotic); }
+
+.vibe-content {
+  margin: 0 0 0.5rem 0;
+}
+
+.vibe-meta {
+  font-size: 0.8rem;
+  color: #888;
+}
